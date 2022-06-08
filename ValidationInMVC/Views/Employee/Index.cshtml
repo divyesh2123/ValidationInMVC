@@ -1,0 +1,76 @@
+﻿@model ValidationInMVC.Models.EmployeeViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@Html.ValidationSummary()
+
+@using (Html.BeginForm("Index", "Employee", FormMethod.Post))
+{
+<div class="mb-3 mt-3">
+
+    @Html.LabelFor(u => u.firstName)
+    @Html.TextBoxFor(u => u.firstName,new{ @class= "form-control" })
+    @Html.ValidationMessageFor(y=>y.firstName)
+  
+</div>
+
+<div class="mb-3 mt-3">
+
+    @Html.LabelFor(u => u.lastName);
+    @Html.TextBoxFor(u => u.lastName, new { @class = "form-control" })
+    @Html.ValidationMessageFor(y => y.lastName)
+
+</div>
+
+<div class="mb-3 mt-3">
+
+    @Html.LabelFor(u => u.EmailAddress)
+    @Html.TextBoxFor(u => u.EmailAddress, new { @class = "form-control" })
+    @Html.ValidationMessageFor(y => y.EmailAddress)
+
+</div>
+
+<div class="mb-3 mt-3">
+
+    @Html.LabelFor(u => u.Salary)
+    @Html.TextBoxFor(u => u.Salary, new { @class = "form-control" })
+    @Html.ValidationMessageFor(y => y.Salary)
+
+</div>
+
+<div class="mb-3 mt-3">
+
+    @Html.LabelFor(u => u.PhoneNumber);
+    @Html.TextBoxFor(u => u.PhoneNumber, new { @class = "form-control" })
+    @Html.ValidationMessageFor(y => y.PhoneNumber)
+
+</div>
+
+<div class="mb-3 mt-3">
+
+    @Html.LabelFor(u => u.Password)
+    @Html.PasswordFor(u => u.Password, new { @class = "form-control" })
+    @Html.ValidationMessageFor(y => y.Password)
+
+</div>
+
+<div class="mb-3 mt-3">
+
+    @Html.LabelFor(u => u.ConfirmPassword)
+    @Html.PasswordFor(u => u.ConfirmPassword, new { @class = "form-control" })
+    @Html.ValidationMessageFor(y => y.ConfirmPassword)
+
+</div>
+
+
+
+    <input type="submit" value="save" />
+
+
+}
+
+
+
+
