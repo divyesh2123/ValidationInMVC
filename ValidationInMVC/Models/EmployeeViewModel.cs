@@ -28,7 +28,7 @@ namespace ValidationInMVC.Models
         [Required(ErrorMessage ="Please Enter Email Address")]
        
         [RegularExpression(@"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$",ErrorMessage ="Please Enter Valid EmailId")]
-        [CustomEmailValidation(ErrorMessage ="Email id is already exist")]
+       // [CustomEmailValidation(ErrorMessage ="Email id is already exist")]
         public string EmailAddress { get; set; }
 
         [Required(ErrorMessage ="Please Enter Phone Number")]

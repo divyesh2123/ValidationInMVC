@@ -1,0 +1,30 @@
+﻿<html>
+
+
+        <head>
+
+
+        </head>
+<body>
+
+        <div id="test"></div>
+
+        <script>
+
+            fetch("/Student/Index")
+                .then(y => y.json())
+                .then(y => {
+
+                    console.log(y);
+                    document.getElementById("test").innerHTML = y.FirstName;
+
+                })
+
+
+        </script>
+
+
+</body>
+
+
+</html>
