@@ -1,0 +1,16 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    This is for specific error
+
+    @Model.Exception.Message
+    @Model.Exception.InnerException
+    @Model.ControllerName
+    @Model.ActionName
+</body>
+</html>
+

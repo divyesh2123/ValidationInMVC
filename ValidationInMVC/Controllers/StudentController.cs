@@ -15,6 +15,11 @@ namespace ValidationInMVC.Controllers
         // GET: Student
         public JsonResult Index()
         {
+            var a = 5;
+            var b = 0;
+
+            var c = a / b;
+
             Employee employee = new Employee();
             employee.FirstName = "Divyesh";
             employee.LastName = "Patel";
@@ -28,7 +33,10 @@ namespace ValidationInMVC.Controllers
 
         public FileResult MyPage()
         {
-            return File(Server.MapPath("~/data/TextFile1.txt"), "text/plain");
+            byte[] fileBytes = System.IO.File.ReadAllBytes(Server.MapPath("~/data/TextFile1.txt"));
+            string fileName = "myfile.ext";
+            return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
+           
         }
 
     }

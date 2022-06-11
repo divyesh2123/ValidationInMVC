@@ -1,0 +1,25 @@
+﻿@model List<Product>
+
+<table>
+
+
+    @foreach (var r in Model)
+    {
+    <tr>
+
+        <td>@r.ProductID</td>
+        <td>@r.UnitPrice</td>
+        <td>@r.Category.CategoryName</td>
+
+        @if (ViewBag.Role == "Admin")
+        {
+
+        <td>@r.UnitsInStock</td>
+        }
+
+    </tr>
+
+    }
+
+
+</table>

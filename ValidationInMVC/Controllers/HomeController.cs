@@ -20,6 +20,11 @@ namespace ValidationInMVC.Controllers
             return View();
         }
 
+        public ActionResult Notavaiable()
+        {
+            return View();
+        }
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

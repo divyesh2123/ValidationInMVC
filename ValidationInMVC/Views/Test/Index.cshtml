@@ -1,0 +1,71 @@
+﻿@model ValidationInMVC.Models.EmployeeData
+
+
+@using (Html.BeginForm("", "", FormMethod.Post))
+{
+
+    @Html.LabelFor(y => y.StateId)
+    @Html.DropDownListFor(y => y.StateId, Model.StateData, new { @id = "test" })
+
+
+
+    @Html.LabelFor(y => y.CityId)
+    @Html.DropDownListFor(y => y.CityId, Model.CityData, new { @id = "test1" })
+    <input type="submit" />
+ }
+
+
+<script>
+
+    
+
+
+        document.getElementById("test").addEventListener("change", function () {
+
+            var stateId = document.getElementById("test").value;
+
+            var myUrl = `/test/CityData?stateId=${stateId}`
+
+            fetch(myUrl).then(function (value) {
+
+
+                return value.json();
+            }).then(y => {
+
+                console.log(y);
+                var html = '';
+                var select = document.getElementById('test1');
+
+                document.getElementById('test1').innerText = "";
+
+
+                y.forEach((ellement) => {
+
+                   
+
+                    var opt = document.createElement('option');
+                    opt.value = ellement.CityID;
+                    opt.innerHTML = ellement.CityName;
+                    select.appendChild(opt);
+                });
+
+                
+
+                
+
+
+            })
+
+
+        })
+
+
+    
+
+
+    
+
+
+</script>
+
+

@@ -1,0 +1,17 @@
+﻿<div id="test"></div>
+
+<script>
+
+
+    fetch("/ProductCommont/Index").then(y => {
+
+        return y.text()
+    }).then(y => {
+        console.log(y);
+        document.getElementById("test").innerHTML = y;
+    })
+
+
+
+</script>
+

@@ -16,6 +16,8 @@ namespace ValidationInMVC
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            BundleTable.EnableOptimizations = true;
         }
     }
 }
