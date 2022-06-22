@@ -1,0 +1,20 @@
+https://redux-toolkit.js.org/tutorials/quick-start
+https://www.javatpoint.com/react-error-boundaries#:~:text=Error%20boundaries%20are%20React%20components,error%20occurred%20in%20a%20component.
+https://javascriptcentric.medium.com/redux-toolkit-react-counter-app-af84a84a223d
+https://www.bezkoder.com/redux-toolkit-crud-react-hooks/
+
+https://www.c-sharpcorner.com/UploadFile/dacca2/various-return-types-from-mvc-controller/
+https://www.c-sharpcorner.com/UploadFile/3d39b4/Asp-Net-mvc-client-side-validation/
+https://www.c-sharpcorner.com/UploadFile/ff2f08/partial-view-in-mvc/#:~:text=Partial%20view%20in%20ASP.NET,us%20to%20reduce%20code%20duplication.
+
+1.Client Validation
+2. Server Side Validation
+
+//Task for partial view
+
+1. company
+2. jd
+3. salary
+4. exp date
+5. job poasted on
+6. skill sert

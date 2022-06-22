@@ -1,0 +1,17 @@
+﻿@using ValidationInMVC.Helper
+
+
+@using (Html.BeginForm("Index", "FileUploadData", FormMethod.Post,new
+{
+    enctype = "multipart/form-data"
+}))
+{
+
+@Html.File("file")
+
+
+
+
+    <input type="submit" value="Save" />
+
+}

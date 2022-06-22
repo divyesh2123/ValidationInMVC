@@ -132,10 +132,12 @@
       <DependentUpon>MyDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\FileUploadDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductCommontController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProductForAdminController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Customer.cs">
@@ -150,6 +152,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\CustomHelpers.cs" />
     <Compile Include="Helper\Employee.cs" />
     <Compile Include="Helper\MyDatabase.cs" />
     <Compile Include="Models\CityDAta.cs" />
@@ -216,6 +219,9 @@
       <DependentUpon>MyDatabase.edmx</DependentUpon>
       <LastGenOutput>MyDatabase.cs</LastGenOutput>
     </Content>
+    <Content Include="myData\TextFile1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="MyDatabase.edmx">
@@ -261,9 +267,12 @@
     <Content Include="Views\Shared\_SpecificError.cshtml" />
     <Content Include="Views\Home\Notavaiable.cshtml" />
     <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Registration\Index.cshtml" />
+    <Content Include="Views\FileUploadData\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="NewFolder1\" />
     <Folder Include="Views\ProductCommont\" />
   </ItemGroup>
   <ItemGroup>
