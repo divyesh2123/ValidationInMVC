@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using ValidationInMVC.Helper;
 
 namespace ValidationInMVC
 {
@@ -7,7 +8,7 @@ namespace ValidationInMVC
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-           // filters.Add(new HandleErrorAttribute());
+            filters.Add(new LogAttribute());
         }
     }
 }

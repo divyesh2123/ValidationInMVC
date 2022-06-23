@@ -128,12 +128,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\UserData\UserDataAreaRegistration.cs" />
     <Compile Include="Category.cs">
       <DependentUpon>MyDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\FileUploadDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OutPutDataCacheController.cs" />
     <Compile Include="Controllers\ProductCommontController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProductForAdminController.cs" />
@@ -154,6 +158,7 @@
     </Compile>
     <Compile Include="Helper\CustomHelpers.cs" />
     <Compile Include="Helper\Employee.cs" />
+    <Compile Include="Helper\LogAttribute.cs" />
     <Compile Include="Helper\MyDatabase.cs" />
     <Compile Include="Models\CityDAta.cs" />
     <Compile Include="Models\CustomEmailValidation.cs" />
@@ -231,6 +236,11 @@
     <Content Include="MyDatabase.edmx.diagram">
       <DependentUpon>MyDatabase.edmx</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
+    <Content Include="Areas\UserData\Views\web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -269,9 +279,14 @@
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Registration\Index.cshtml" />
     <Content Include="Views\FileUploadData\Index.cshtml" />
+    <Content Include="Views\OutPutDataCache\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\UserData\Controllers\" />
+    <Folder Include="Areas\UserData\Data\" />
+    <Folder Include="Areas\UserData\Views\Shared\" />
     <Folder Include="NewFolder1\" />
     <Folder Include="Views\ProductCommont\" />
   </ItemGroup>
