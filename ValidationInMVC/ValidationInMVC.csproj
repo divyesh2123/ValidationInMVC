@@ -241,6 +241,7 @@
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <Content Include="Areas\UserData\Views\web.config" />
+    <Content Include="Areas\UserData\Views\Shared\_Layout1.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -286,7 +287,6 @@
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\UserData\Controllers\" />
     <Folder Include="Areas\UserData\Data\" />
-    <Folder Include="Areas\UserData\Views\Shared\" />
     <Folder Include="NewFolder1\" />
     <Folder Include="Views\ProductCommont\" />
   </ItemGroup>
