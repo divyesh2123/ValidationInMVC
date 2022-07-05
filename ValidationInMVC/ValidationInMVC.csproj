@@ -134,6 +134,7 @@
     <Compile Include="Category.cs">
       <DependentUpon>MyDatabase.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\EmailSendingDataController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\FileUploadDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -149,6 +150,24 @@
     </Compile>
     <Compile Include="CustomerDemographic.cs">
       <DependentUpon>MyDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailTemplate.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailTemplate.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailTemplate.cs">
+      <DependentUpon>EmailTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailTemplate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailTemplate.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailTemplate1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailTemplate.tt</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>MyDatabase.tt</DependentUpon>
@@ -210,6 +229,16 @@
     <Content Include="data\TextFile1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="EmailTemplate.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmailTemplate.edmx</DependentUpon>
+      <LastGenOutput>EmailTemplate.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmailTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmailTemplate.edmx</DependentUpon>
+      <LastGenOutput>EmailTemplate1.cs</LastGenOutput>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -242,6 +271,13 @@
     <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <Content Include="Areas\UserData\Views\web.config" />
     <Content Include="Areas\UserData\Views\Shared\_Layout1.cshtml" />
+    <EntityDeploy Include="EmailTemplate.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmailTemplate.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EmailTemplate.edmx.diagram">
+      <DependentUpon>EmailTemplate.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -288,6 +324,7 @@
     <Folder Include="Areas\UserData\Controllers\" />
     <Folder Include="Areas\UserData\Data\" />
     <Folder Include="NewFolder1\" />
+    <Folder Include="Views\EmailSendingData\" />
     <Folder Include="Views\ProductCommont\" />
   </ItemGroup>
   <ItemGroup>
