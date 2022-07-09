@@ -1,0 +1,13 @@
+﻿@model List<ValidationInMVC.Models.ProdcutViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach(var d in Model)
+            {
+
+            <div>@d.ProductName</div>
+            }
+

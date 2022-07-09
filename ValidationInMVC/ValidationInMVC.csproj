@@ -135,6 +135,7 @@
       <DependentUpon>MyDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\EmailSendingDataController.cs" />
+    <Compile Include="Controllers\EmailTemplateEditorController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\FileUploadDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Controllers\ProductCommontController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProductForAdminController.cs" />
+    <Compile Include="Controllers\ProductFromAPIController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TestController.cs" />
@@ -183,6 +185,8 @@
     <Compile Include="Models\CustomEmailValidation.cs" />
     <Compile Include="Models\EmployeeData.cs" />
     <Compile Include="Models\EmployeeViewModel.cs" />
+    <Compile Include="Models\ProdcutViewModel.cs" />
+    <Compile Include="Models\RichTextEditorViewModel.cs" />
     <Compile Include="MyDatabase.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -317,6 +321,8 @@
     <Content Include="Views\Registration\Index.cshtml" />
     <Content Include="Views\FileUploadData\Index.cshtml" />
     <Content Include="Views\OutPutDataCache\Index.cshtml" />
+    <Content Include="Views\EmailTemplateEditor\Index.cshtml" />
+    <Content Include="Views\ProductFromAPI\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
